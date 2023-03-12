@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: rgb(44, 38, 68);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+header img {
+  width: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+ul li a {
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+.section-right-hero {
+  width: 30%;
+}
+
+.section-right-hero img {
+  width: 80%;
+}
+
+.section-left-hero p {
+  display: inline;
+}
+
+.section-left-hero span {
+  color: yellow;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+main .project-1ist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.project img {
+  width: 250px;
+}
+
+.project-1ist .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main-heading {
+  text-decoration: underline blue;
+}
+
+footer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+footer .contacts {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 10px;
+}
+
+.contacts img {
+  width: 30px;
+}
+
+.footer-heading {
+  text-decoration: underline blue;
+}
+
+@media screen and (max-width:576px) {
+  nav ul {
+    display: none;
+  }
+
+  header img {
+    display: block;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .section-right-hero img {
+    width: 100%;
+  }
+
+  .section-left-hero div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-left-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .project-1ist {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
